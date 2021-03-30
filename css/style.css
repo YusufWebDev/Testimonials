@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  line-height: 1.3;
+  font-size: 0.8125rem;
+  min-width: 23.4375rem;
+  max-width: 90rem;
+}
+@media (min-width: 31.25rem) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "a" "b" "c" "d" "e";
+  gap: 1.4rem;
+  padding: 0.2rem;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+}
+@media (min-width: 31.26rem) and (min-width: 56.24rem) {
+  .cards-container {
+    max-width: 69.6375rem;
+    margin: 2rem 1.5rem 2rem 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "a a b e" "c d d e";
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  padding: 1.3rem 1.4rem 2rem 2rem;
+  border-radius: 0.8125rem;
+  overflow: hidden;
+  box-shadow: 23px 18px 37px -4px rgba(0, 0, 0, 0.36);
+}
+
+.card-head {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+.card-head__image {
+  height: 2.25rem;
+  margin-right: 1rem;
+  border-radius: 50%;
+}
+.card-head__profile {
+  line-height: 1.3;
+}
+.card-head__profile__name {
+  color: #ecf2f8;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.card-head__profile__title {
+  color: #ecf2f8;
+  opacity: 0.5;
+}
+
+.card-comments {
+  max-width: 60ch;
+}
+@media (min-width: 31.25rem) {
+  .card-comments {
+    max-width: 100%;
+  }
+}
+.card-comments__top {
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: white;
+  margin-bottom: 1.4rem;
+}
+.card-comments__bottom {
+  color: #ecf2f8;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.card-1 {
+  grid-area: a;
+  background-color: #7541c8;
+  background-image: url("/images/bg-pattern-quotation.svg");
+  background-position: 90% 0;
+  background-repeat: no-repeat;
+}
+.card-1 .card-head__image {
+  border: 2px solid rgba(236, 242, 248, 0.3);
+}
+
+.card-2 {
+  grid-area: b;
+  background-color: #48556a;
+}
+
+.card-3 {
+  grid-area: c;
+  background-color: white;
+}
+.card-3 .card-head__profile {
+  line-height: 1.3;
+}
+.card-3 .card-head__profile__name {
+  color: #48556a;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.card-3 .card-head__profile__title {
+  color: #48556a;
+  opacity: 0.5;
+}
+.card-3 .card-comments__top {
+  color: #48556a;
+}
+.card-3 .card-comments__bottom {
+  color: #48556a;
+}
+
+.card-4 {
+  grid-area: d;
+  background-color: #19212e;
+}
+.card-4 .card-head__image {
+  border: 2px solid rgba(117, 65, 200, 0.6);
+}
+
+.card-5 {
+  grid-area: e;
+  background-color: white;
+}
+.card-5 .card-head__profile {
+  line-height: 1.3;
+}
+.card-5 .card-head__profile__name {
+  color: #48556a;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.card-5 .card-head__profile__title {
+  color: #48556a;
+  opacity: 0.5;
+}
+.card-5 .card-comments__top {
+  color: #48556a;
+}
+.card-5 .card-comments__bottom {
+  color: #48556a;
+}/*# sourceMappingURL=style.css.map */

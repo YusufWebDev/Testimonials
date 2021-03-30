@@ -1,0 +1,83 @@
+.card-1 {
+	grid-area: a;
+	background-color: $clr-prim-ModerateViolet;
+	background-image: url("/images/bg-pattern-quotation.svg");
+	background-position: 90% 0;
+	background-repeat: no-repeat;
+
+	.card-head {
+		&__image {
+			border: 2px solid rgba($clr-neut-LightGrayishBlue, 0.3);
+		}
+	}
+}
+
+.card-2 {
+	grid-area: b;
+	background-color: $clr-prim-VeryDarkGrayishBlue;
+}
+
+.card-3 {
+	grid-area: c;
+	background-color: $clr-prim-White;
+
+	.card-head {
+		&__profile {
+			line-height: 1.3;
+			&__name {
+				color: $clr-prim-VeryDarkGrayishBlue;
+				font-weight: 500;
+				font-size: 1rem;
+			}
+			&__title {
+				color: $clr-prim-VeryDarkGrayishBlue;
+				opacity: 0.5;
+			}
+		}
+	}
+	.card-comments {
+		&__top {
+			color: $clr-prim-VeryDarkGrayishBlue;
+		}
+		&__bottom {
+			color: $clr-prim-VeryDarkGrayishBlue;
+		}
+	}
+}
+.card-4 {
+	grid-area: d;
+	background-color: $clr-prim-VeryDarkBlackishBlue;
+
+	.card-head {
+		&__image {
+			border: 2px solid rgba($clr-prim-ModerateViolet, 0.6);
+		}
+	}
+}
+.card-5 {
+	grid-area: e;
+	background-color: $clr-prim-White;
+
+	.card-head {
+		&__profile {
+			line-height: 1.3;
+			&__name {
+				color: $clr-prim-VeryDarkGrayishBlue;
+				font-weight: 500;
+				font-size: 1rem;
+			}
+			&__title {
+				color: $clr-prim-VeryDarkGrayishBlue;
+				opacity: 0.5;
+			}
+		}
+	}
+	.card-comments {
+		&__top {
+			color: $clr-prim-VeryDarkGrayishBlue;
+		}
+		&__bottom {
+			color: $clr-prim-VeryDarkGrayishBlue;
+		}
+	}
+}
